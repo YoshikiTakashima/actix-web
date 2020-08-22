@@ -135,6 +135,7 @@ pub mod dev {
     pub use actix_http::{
         Extensions, Payload, PayloadStream, RequestHead, ResponseHead, Request
     };
+    pub use actix_http::{
     pub use actix_router::{Path, ResourceDef, ResourcePath, Url};
     pub use actix_server::Server;
     pub use actix_service::{Service, Transform};
@@ -147,6 +148,7 @@ pub mod dev {
         }
         patterns
     }
+    pub use actix_http::h1::Payload as H1Payload;
 
     use crate::http::header::ContentEncoding;
     use actix_http::{Response, ResponseBuilder};
