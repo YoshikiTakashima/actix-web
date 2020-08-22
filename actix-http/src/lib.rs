@@ -68,9 +68,6 @@ pub mod http {
     }
     pub use crate::header::ContentEncoding;
     pub use crate::message::ConnectionType;
-
-    pub use crate::payload::Payload;
-    pub use crate::request::Request;
 }
 
 /// Http protocol
