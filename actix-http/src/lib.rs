@@ -26,8 +26,8 @@ mod helpers;
 mod httpcodes;
 pub mod httpmessage;
 mod message;
-mod payload;
-mod request;
+pub mod payload;
+pub mod request;
 mod response;
 mod service;
 mod time_parser;
@@ -68,6 +68,9 @@ pub mod http {
     }
     pub use crate::header::ContentEncoding;
     pub use crate::message::ConnectionType;
+
+    pub use crate::payload::Payload;
+    pub use crate::request::Request;
 }
 
 /// Http protocol
